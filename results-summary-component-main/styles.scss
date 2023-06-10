@@ -1,0 +1,215 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+// * {
+//     border: black 1px solid;
+// }
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.pale-blue {
+    color: hsl(241, 100%, 89%);
+}
+
+body {}
+
+.main-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whole-block {
+    display: flex;
+    width: 40rem;
+    box-shadow: 1rem 2rem 6rem -1rem hsla(241, 81%, 54%, 20%);
+
+    .left-block-space {
+        flex-basis: 50%;
+        flex-grow: 1;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: stretch;
+
+
+
+        .left-block {
+            background: linear-gradient(to bottom, hsla(252, 100%, 67%, 100%), hsla(241, 81%, 54%, 100%));
+            display: flex;
+            flex-direction: column;
+            border-radius: 2rem;
+            align-items: center;
+            padding: 2rem;
+
+            &>span:first-child {
+                margin-bottom: 2rem;
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+
+            .main-score {
+                background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+                border-radius: 100%;
+                width: 10rem;
+                height: 10rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 2rem;
+
+                span:first-child {
+                    // display: block;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                }
+
+                span:nth-child(2) {
+                    opacity: 0.7;
+                }
+            }
+
+            &>span:nth-child(3) {
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            &>span:nth-child(4) {
+                display: block;
+                padding-inline: 1rem;
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .right-block {
+        flex-basis: 50%;
+        padding: 2rem;
+        flex-grow: 1;
+        box-sizing: border-box;
+        font-weight: 700;
+
+        span:first-child {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .subscore {
+            border-radius: 1rem;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            &:nth-of-type(1) {
+                background: hsl(0, 100%, 67%, 0.1);
+
+                div:first-child {
+                    color: hsl(0, 100%, 67%);
+                }
+            }
+
+            &:nth-of-type(2) {
+                background: hsla(39, 100%, 56%, 0.1);
+
+                div:first-child {
+                    color: hsl(39, 100%, 56%);
+                }
+            }
+
+            &:nth-of-type(3) {
+                background: hsla(166, 100%, 37%, 0.1);
+
+                div:first-child {
+                    color: hsl(166, 100%, 37%);
+                }
+            }
+
+            &:nth-of-type(4) {
+                background: hsla(234, 85%, 45%, 0.1);
+
+                div:first-child {
+                    color: hsl(234, 85%, 45%);
+                }
+            }
+
+            img {
+                transform: translateY(4px);
+                margin-right: 0.3rem;
+            }
+
+
+            div:nth-child(2)::after {
+                content: "\00A0\00A0/ 100";
+                opacity: 0.5;
+            }
+
+        }
+
+        .continue-button {
+            background: hsl(224, 30%, 27%);
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 2rem;
+            padding-block: 1rem;
+            margin-top: 2rem;
+
+            &:hover {
+                background: linear-gradient(to bottom, hsla(252, 100%, 67%, 100%), hsla(241, 81%, 54%, 100%));
+
+            }
+
+        }
+
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+
+
+        .main-wrapper {
+            align-items: flex-start;
+            height: auto;
+        }
+
+        .whole-block {
+            flex-direction: column;
+
+            .left-block-space {
+
+                .left-block {
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+            }
+
+        }
+
+        .attribution {
+            position: relative;
+            text-align: center;
+            bottom: auto;
+        }
+    }
+}

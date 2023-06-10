@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.pale-blue {
+  color: hsl(241, 100%, 89%);
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whole-block {
+  display: flex;
+  width: 40rem;
+  box-shadow: 1rem 2rem 6rem -1rem hsla(241, 81%, 54%, 0.2);
+}
+.whole-block .left-block-space {
+  flex-basis: 50%;
+  flex-grow: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+}
+.whole-block .left-block-space .left-block {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+.whole-block .left-block-space .left-block > span:first-child {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.whole-block .left-block-space .left-block .main-score {
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.whole-block .left-block-space .left-block .main-score span:first-child {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.whole-block .left-block-space .left-block .main-score span:nth-child(2) {
+  opacity: 0.7;
+}
+.whole-block .left-block-space .left-block > span:nth-child(3) {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.whole-block .left-block-space .left-block > span:nth-child(4) {
+  display: block;
+  padding-inline: 1rem;
+  margin-bottom: 1rem;
+}
+.whole-block .right-block {
+  flex-basis: 50%;
+  padding: 2rem;
+  flex-grow: 1;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+.whole-block .right-block span:first-child {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.whole-block .right-block .subscore {
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.whole-block .right-block .subscore:nth-of-type(1) {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+.whole-block .right-block .subscore:nth-of-type(1) div:first-child {
+  color: hsl(0, 100%, 67%);
+}
+.whole-block .right-block .subscore:nth-of-type(2) {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+.whole-block .right-block .subscore:nth-of-type(2) div:first-child {
+  color: hsl(39, 100%, 56%);
+}
+.whole-block .right-block .subscore:nth-of-type(3) {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+.whole-block .right-block .subscore:nth-of-type(3) div:first-child {
+  color: hsl(166, 100%, 37%);
+}
+.whole-block .right-block .subscore:nth-of-type(4) {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+.whole-block .right-block .subscore:nth-of-type(4) div:first-child {
+  color: hsl(234, 85%, 45%);
+}
+.whole-block .right-block .subscore img {
+  transform: translateY(4px);
+  margin-right: 0.3rem;
+}
+.whole-block .right-block .subscore div:nth-child(2)::after {
+  content: "  / 100";
+  opacity: 0.5;
+}
+.whole-block .right-block .continue-button {
+  background: hsl(224, 30%, 27%);
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  margin-top: 2rem;
+}
+.whole-block .right-block .continue-button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  body .main-wrapper {
+    align-items: flex-start;
+    height: auto;
+  }
+  body .whole-block {
+    flex-direction: column;
+  }
+  body .whole-block .left-block-space .left-block {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  body .attribution {
+    position: relative;
+    text-align: center;
+    bottom: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
