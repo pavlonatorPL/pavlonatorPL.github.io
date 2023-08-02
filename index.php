@@ -72,9 +72,8 @@ include('functions/langauge.php');
                         <p>I am self-taught in these areas. I have had an interest in these since I was a child and now
                             am
                             putting effort into formalizing these skills. I am especially interested in making neat
-                            websites. UI knowledge has always been interesting for me and I learn UI design from time to
-                            time.</p>
-                        <p>I am currently looking for a project to work on on a part-time job. I live in South Korea so
+                            websites. UI knowledge has always been interesting for me.</p>
+                        <p>I am currently looking for a project to work on or a part-time job. I live in South Korea so
                             if
                             you do not mind the time-difference in our cooperaion, feel free to contact me :)
                         </p>
@@ -190,7 +189,7 @@ include('functions/langauge.php');
                                 class="col border border-warning rounded-pill d-flex flex-column align-items-center justify-content-center p-3 m-2">
                                 <i class="fa-brands fa-wordpress-simple mb-2"></i>
                                 <strong>Wordpress</strong>
-                                
+
                             </div>
                         </div>
 
@@ -198,7 +197,41 @@ include('functions/langauge.php');
                         <div class="row row-cols-auto">
                             <div
                                 class="col border border-danger rounded-pill d-flex flex-column align-items-center justify-content-center p-3 m-2">
-                                <i class="fa-brands fa-php mb-2"></i> <strong>PHP</strong>
+                                <i class="fa-brands fa-php mb-2"></i>
+                                <strong>PHP</strong>
+                            </div>
+
+                            <div
+                                class="col border border-danger rounded-pill d-flex flex-column align-items-center justify-content-center p-3 m-2">
+                                <img class="mb-2" src="/icons/python.svg"></img>
+                                <strong>Python</strong>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects-section" class="m-5 my-7">
+                        <h2 class="mb-4">
+                            <span class="text-primary fw-semibold">Projects</span>
+                        </h2>
+
+                        <h3>Websites</h3>
+                        <!-- <div class="card text-bg-dark">
+                            <img src="/images/ondol.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                        </div> -->
+
+                        <div class="card text-bg-dark border-secondary mb-3">
+                            <img src="/images/ondol.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ondol.eu</h5>
+                                <p class="card-text">Website for a business selling imported products. It contains i.e. product info, downloadads section, contact form, distributor search with interactive map and table.</p>
+                                <p class="card-text"><small class="">HTML/SCSS (+Bootstrap), JS (+Leaflet)</small>
+                                </p>
                             </div>
                         </div>
 
